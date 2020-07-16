@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DAY2_Problem2</title>
+	<meta  name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+<body>
+	<h1 style="color: green;">PROBLEM-2 of day-2</h1>
+	<h3 style="color: purple;">Open the console to see the input</h3>
+	<h4>String Methods and properties</h4>
+	<ul>
+		<li>length</li>
+		<li>toUpperCase()</li>
+		<li>toLowerCase()</li>
+		<li>split()</li>
+		<li>charAt()</li>
+		<li>indexOf()</li>
+		<li>lastIndexOf()</li>
+		<li>replace()</li>
+		<li>slice()</li>
+		<li>subString()</li>
+		<li>subStr()</li>
+		<li>trim()</li>
+		<li>concat()</li>
+	</ul>
+	<h4>Array methods and properties</h4>
+	<ul>
+		<li>length</li>
+		<li>sort()</li>
+		<li>push()</li>
+		<li>isArray()</li>
+		<li>instance of</li>
+		<li>toString()</li>
+		<li>join()</li>
+		<li>pop()</li>
+		<li>shift()</li>
+		<li>unshift()</li>
+		<li>splice()</li>
+		<li>delete</li>
+		<li>concat()</li>
+		<li>slice</li>
+	</ul>
+
+	<script type="text/javascript">
+		var a;
+		a=prompt("Enter the string :","hey Hi Welcome To This,hey.");
+	    var len=a.length;
+	    console.log(len);
+	    var upp=a.toUpperCase();
+	    console.log("string converted to uppercase",upp);
+	    var low=a.toLowerCase();
+	    console.log("String converted to lowercase",low);
+	    var array=a.split(" ");
+	    console.log("after splitting on the basis of space string becomes:",array);
+	    var y=a.charAt(0);
+	    console.log("The character at the index 0 is :",y);
+	    var z=a.indexOf('H');
+	    console.log("first index of a particular alphabet:",z)
+	    var b=a.lastIndexOf('h');
+	    console.log("last index of particular alphabet:",b);
+	    var sub=a.substring(4,6);
+	    console.log("substring found at the location:",sub);
+	    var slices=a.slice(-7,-1);
+	    console.log("After slicing:",slices);
+		var substrs=a.substr(1,8);
+		console.log("using substr :",substrs);
+		var rep=a.replace("Hi","HELLO");
+		console.log("replacing ",rep);
+		var repall=a.replace(/hey/g,"guys");
+		console.log("After replacing many times :",repall);
+		var a1=["banana","Mango","lemon"];
+		console.log(a1.length);
+		console.log(a1.toString());
+		console.log(a1.join(","));
+		a1.push("pushed")
+		console.log(a1);
+		a1.pop();
+		console.log(a1);
+		a1.shift();
+		console.log(a1);
+		a1.unshift("againadded");
+		console.log(a1);
+		delete a1[1];
+		console.log(a1);
+		a1.splice(0,1,"0added","1added");
+		console.log(a1);
+		var b1=["fruit"];
+		b1=b1.concat(a1);
+		console.log(b1);
+
+
+	</script>
+
+</body>
+</html>
