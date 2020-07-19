@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4_problem4</title>
+</head>
+<body>
+    <h2 style="color: green;">Day4_problem4</h2>
+    <h3 style="color: violet;">open the console to see the output</h3>
+    <script>
+        function addition()
+        {
+            let one=prompt("Enter the first number to add:");
+            let two=prompt("Enter the second number to add");
+            return one+two;
+        }
+        function subtraction()
+        {
+            let one=prompt("Enter the first number to subtact:");
+            let two=prompt("Enter the second number to subtract ");
+            return one-two;
+        }
+        function multiplication()
+        {
+            let one=prompt("Enter the first number to multiply:");
+            let two=prompt("Enter the second number to multiply");
+            return one*two;
+        }
+        function division()
+        {
+            let one=prompt("Enter the first number to divide:");
+            let two=prompt("Enter the second number to divide");
+            return one/two;
+        }
+        function squareroot()
+        {
+            let one=prompt("Enter the number to find out squareroot:");
+            return Math.sqrt(one);
+        }
+        function percentage()
+        {
+            let one=prompt("Enter the number:");
+            let two=prompt("Enter the total ");
+            return (one/two)*100;
+        }
+        window.alert(" choose the option\n:1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Squareroot\n6.Percentage");
+        let a =parseInt(prompt("enter the option"));
+        switch(a)
+        {
+            case 1:
+                console.log(addition());
+                break;
+            case 2:
+                console.log(subtraction());
+                break;
+            case 3:
+                console.log(multiplication());
+                break;
+            case 4:
+                console.log(division());
+                break;
+            case 5:
+                console.log(squareroot());
+                break;
+            case 6:
+                console.log(percentage());
+                break;
+            default:
+                console.log("not a valid operation");
+        }
+
+    </script>
+</body>
+</html>
