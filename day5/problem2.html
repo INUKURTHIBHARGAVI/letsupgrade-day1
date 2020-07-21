@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5_problem2</title>
+</head>
+<body>
+    <h2 style="color: green;">Day5_problem2</h2>
+    <h3 style="color: indigo;">open the console to see the output</h3>
+    <script>
+        class User
+        {
+            constructor(name,age,email)
+            {
+            this.name=name;
+            this.age=age;
+            this.email=email;
+            this.coins=0;
+            this.course=[];
+            }
+            login()
+            {
+                console.log(this.name,"Logged in");
+            }
+            logout()
+            {
+                console.log(this.name,"logged out");
+            }
+        }
+        class Moderator extends User
+        {
+           constructor(name,age,email,coins)
+           {
+               super(name,age,email);
+               this.coins=0;
+           }
+           Addcoins()
+           {
+               this.coins++;
+           }
+           Removecoins()
+           {
+               this.coins--;
+           }
+
+        }
+        class Admin extends Moderator
+        {
+            constructor(name,age,email)
+            {
+                super(name,age,email);
+            }
+            addcourse(user,x)
+            {
+                user.course.push(x);
+            }
+            deletecourse(user)
+            {
+                user.course.pop();
+            }
+        }
+        var U=new User("Bhargavi",19,"inukurthibhargavi238@gmail.com");
+        console.log(U)
+        var S=new User("sai",20,"sai@gmail.com");
+        console.log(S);
+        var L=new User("latha",35,"latha29@gamil.com");
+        console.log(L);
+        U.login();
+        S.login();
+        L.login();
+        U.logout();
+        var M=new Moderator("sai",20,"sai@gmail.com",0);
+        console.log(M)
+        M.Addcoins();
+        console.log(M)
+        M.Removecoins();
+        console.log(M)
+        var A=new Admin("latha",35,"latha29@gamil.com");
+        console.log(A);
+        A.addcourse(U,"HTML");
+        console.log(A);
+        A.deletecourse(U);
+        console.log(A);
+    </script>
+</body>
+</html>

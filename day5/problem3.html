@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5_problem3</title>
+</head>
+<body>
+    <h2 style="color: green;">Day5_problem3</h2>
+    <h3 style="color: indigo;">open the console to see the output</h3>
+    <script>
+    const url='https://jsonplaceholder.typicode.com/todos';
+    async function getData(){
+
+    const response=await fetch(url);
+    const data=await response.json();
+    return data;
+    }
+    const callGetData=async ()=>{
+        try{
+            const data=await getData()
+            console.log(data);
+        }
+        catch(error)
+        {
+            console.log("something gone wrong");
+        }
+    }
+    callGetData();
+
+    </script>
+    
+    
+</body>
+</html>
