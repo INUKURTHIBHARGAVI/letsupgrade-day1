@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6_problem1</title>
+</head>
+<body>
+    <h2 style="color:honeydew;">Day6_problem1</h2>
+    <h4 style="color: lemonchiffon;">Changing the background color for every 5 seconds</h4>
+    <script>
+        var arr=["yellow","green","indigo","grey","black","red"];
+        var k=0;
+        setInterval(()=>{
+            setcolor(arr)
+        },5000);
+        function setcolor(arr)
+        {  
+            document.body.style.backgroundColor=arr[k];
+            k++;
+            if(k==arr.length)
+            {
+                k=0;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

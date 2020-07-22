@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6_problem2</title>
+    <style>
+        #do
+        {
+            color: rgb(185, 27, 114);
+            font-size: large;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body >
+    
+    <h2 style="color:green;">Day6_problem2</h2>
+    <p id='do'></p>
+    <script>
+       var a=parseInt(window.prompt("enter a number to display table:","1"));
+       document.getElementById('do').innerHTML=(" TABLE OF "+a+"<br>");
+        fun(a);
+        function fun(a)
+        {
+            for(let i=1;i<=10;i++)
+            {
+                document.writeln(a+" X "+i+" = "+a*i+"<br>");
+
+            }
+        }
+    </script>
+    
+</body>
+</html>

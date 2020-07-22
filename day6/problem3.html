@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6_problem3</title>
+    <style>
+        #wel
+        {
+            color: brown;
+            font-size: large;
+            font-weight: bolder;
+            font-family: 'Lucida Sans';
+        }
+        #clock
+        {
+            color: darkblue;
+            font-size: large;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body >
+    <h2 style="color:green;">Day6_problem3</h2>
+    <p id='wel'></p>
+    <p id='clock'></p>
+    
+    <button onclick=fun()>DarkMode/LightMode</button>
+    <script>
+        var a=prompt("Enter Your Name:","sai");
+        document.getElementById('wel').innerHTML="Welcome to you "+a+"<br>";
+        setInterval(update,1000);
+        function update()
+        {
+            var pre=new Date();
+            var pre=pre.toLocaleTimeString();
+            document.getElementById('clock').innerHTML=pre;
+        }
+        function fun()
+        {
+            document.body.style.backgroundColor=(document.body.style.backgroundColor=='black'?'white':'black')
+        }
+
+    </script>
+    
+</body>
+</html>
